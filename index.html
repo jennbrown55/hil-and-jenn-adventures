@@ -4,42 +4,75 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>The Adventures of Hil & Jenn</title>
+
+<!-- Social share (Open Graph & Twitter) -->
+<meta property="og:title" content="The Adventures of Hil & Jenn" />
+<meta property="og:description" content="from the Bay Area to Bali, Borneo, and Beyond! — celebrating 18 years of friendship across 18+ countries and counting..." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jennbrown55.github.io/hil-and-jenn-adventures/" />
+<meta property="og:image" content="https://img.youtube.com/vi/GKpNc_Njm74/hqdefault.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Adventures of Hil & Jenn" />
+<meta name="twitter:description" content="from the Bay Area to Bali, Borneo, and Beyond!" />
+<meta name="twitter:image" content="https://img.youtube.com/vi/GKpNc_Njm74/hqdefault.jpg" />
+
 <style>
   :root{
     --bg:#f7f9fc; --ink:#1b1b1f; --muted:#5d606d; --card:#ffffff;
-    --shadow:0 8px 20px rgba(0,0,0,.1); --accent:#ff4d6d;
+    --shadow:0 8px 20px rgba(0,0,0,.10); --accent:#ff4d6d;
   }
-  *{box-sizing:border-box}
+  *{box-sizing:border-box; -webkit-tap-highlight-color: transparent;}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
   .wrap{max-width:1200px;margin:0 auto;padding:40px 20px 64px}
   h1{font-size:clamp(2.2rem,3.5vw,3.2rem);margin:0 0 6px;text-align:center}
   .subtext{text-align:center;color:var(--muted);font-size:1.08rem;margin:0 0 4px}
-  .subtext-small{text-align:center;color:var(--muted);font-size:0.96rem;margin:0 0 26px;font-style:italic;}
+  .subtext-small{text-align:center;color:var(--muted);font-size:0.96rem;margin:0 0 22px;font-style:italic;}
 
   /* Centered, same-baseline collage with subtle tilt and 5–10% overlap */
-  .collage{display:flex;justify-content:center;align-items:flex-end;margin-bottom:26px;gap:0;position:relative}
+  .collage{display:flex;justify-content:center;align-items:flex-end;margin-bottom:22px;gap:0;position:relative; padding:0 8px}
   .photo{height:250px;width:auto;box-shadow:var(--shadow);border-radius:0;overflow:hidden;position:relative;z-index:2;transition:transform .2s ease}
   .photo img{height:100%;width:auto;display:block;object-fit:cover}
-
   .giants{transform:rotate(-3deg);margin-right:-60px;z-index:3;}
   .bali{transform:rotate(0deg);z-index:2;}
   .egypt{transform:rotate(3deg);margin-left:-60px;z-index:3;}
 
-  @media(max-width:720px){
-    .photo{height:210px}
-    .giants{margin-right:-40px;}
-    .egypt{margin-left:-40px;}
-  }
-
-  .section-title{font-size:1.6rem;margin:20px 0 12px}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-  .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+  /* Video grid */
+  .section-title{font-size:1.6rem;margin:18px 0 10px;text-align:center}
+  .cards{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+  .card{grid-column:span 6;background:var(--card);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
   .thumb img{width:100%;height:170px;object-fit:cover;display:block}
-  .meta{padding:14px 16px 18px}
+  .meta{padding:12px 14px 16px}
   .title a{color:var(--ink);text-decoration:none;font-weight:800}
-  .title a:hover{color:var(--accent)}
-  .footer{margin-top:36px;text-align:center;color:var(--muted)}
-  .emoji{font-style:normal}
+  .title a:hover{color:#d4af37}
+
+  /* Footer */
+  .footer{margin-top:30px;text-align:center;color:var(--muted)}
+  .emoji{font-style:normal; white-space:nowrap;}
+
+  /* Responsive polish */
+  @media (max-width:1024px) {
+    .photo{height:240px}
+  }
+  @media (max-width:820px) {
+    .wrap{padding:32px 16px 56px}
+    .photo{height:220px}
+    .giants{margin-right:-48px}
+    .egypt{margin-left:-48px}
+    .cards{gap:12px}
+  }
+  @media (max-width:640px) {
+    .photo{height:200px}
+    .giants{margin-right:-40px}
+    .egypt{margin-left:-40px}
+    .cards{gap:10px}
+    .card{grid-column:span 12}
+  }
+  @media (max-width:420px) {
+    .photo{height:185px}
+    .giants{margin-right:-34px}
+    .egypt{margin-left:-34px}
+    .thumb img{height:160px}
+  }
 </style>
 </head>
 <body>
