@@ -15,10 +15,10 @@
   .subtext-small{text-align:center;color:var(--muted);font-size:0.96rem;margin:0 0 22px;font-style:italic;}
 
   .collage{display:flex;justify-content:center;align-items:flex-end;margin-bottom:22px;gap:0;position:relative;padding:0 8px;}
-  .photo{width:clamp(210px,26vw,300px);box-shadow:var(--shadow);overflow:hidden;position:relative;z-index:2;transition:transform .2s ease;background:#fff;padding:0}
-  .photo img{width:100%;height:auto;display:block;object-fit:cover;transform:translateY(0);}
-  .giants{transform:rotate(-5deg) translateY(8px);margin-right:-10px;z-index:3;}
-  .bali{transform:rotate(5deg) translateY(-4px);margin-left:-10px;z-index:2;}
+  .photo{width:clamp(210px,26vw,300px);background:#fdf9e8;background-image:radial-gradient(rgba(0,0,0,0.015) 1px, rgba(0,0,0,0) 1px);background-size:4px 4px;box-shadow:0 12px 28px rgba(0,0,0,.20);overflow:hidden;position:relative;z-index:2;isolation:isolate;transition:transform .2s ease}
+  .photo img{width:100%;height:auto;display:block;object-fit:cover;transform:translateY(-48px);}
+  .giants{transform:rotate(-5deg) translateY(8px);margin-right:-10px;z-index:1;}
+  .bali{transform:rotate(5deg) translateY(-4px);margin-left:-10px;z-index:10;}
   .egypt{transform:rotate(3deg);margin-left:-60px;z-index:3;}
 
   .section-title{font-size:1.6rem;margin:18px 0 10px;text-align:center}
@@ -40,12 +40,12 @@
 
 .giants img{object-position:center 62%;}
 .bali img{object-position:center 64%;}
-.photo{width:clamp(210px,26vw,300px);box-shadow:var(--shadow);overflow:hidden;position:relative;z-index:2;transition:transform .2s ease;background:#fff;padding:0}}
+.photo{width:clamp(210px,26vw,300px);background:#fdf9e8;background-image:radial-gradient(rgba(0,0,0,0.015) 1px, rgba(0,0,0,0) 1px);background-size:4px 4px;box-shadow:0 12px 28px rgba(0,0,0,.20);overflow:hidden;position:relative;z-index:2;isolation:isolate;transition:transform .2s ease}}
 }
-.photo{width:clamp(210px,26vw,300px);box-shadow:var(--shadow);overflow:hidden;position:relative;z-index:2;transition:transform .2s ease;background:#fff;padding:0}.giants{transform:rotate(-5deg) translateY(8px);margin-right:-10px;z-index:3;}.bali{transform:rotate(5deg) translateY(-4px);margin-left:-10px;z-index:2;}}
-.giants{margin-right:-8px;transform:rotate(-5deg) translateY(8px)}.bali{margin-left:-8px;transform:rotate(5deg) translateY(-4px)}}
-@media (max-width:720px){.collage{gap:12px}.photo{width:clamp(210px,26vw,300px);box-shadow:var(--shadow);overflow:hidden;position:relative;z-index:2;transition:transform .2s ease;background:#fff;padding:0}}
-@media (max-width:520px){.photo{width:clamp(210px,26vw,300px);box-shadow:var(--shadow);overflow:hidden;position:relative;z-index:2;transition:transform .2s ease;background:#fff;padding:0}}
+.photo{width:clamp(210px,26vw,300px);background:#fdf9e8;background-image:radial-gradient(rgba(0,0,0,0.015) 1px, rgba(0,0,0,0) 1px);background-size:4px 4px;box-shadow:0 12px 28px rgba(0,0,0,.20);overflow:hidden;position:relative;z-index:2;isolation:isolate;transition:transform .2s ease}.giants{transform:rotate(-5deg) translateY(8px);margin-right:-10px;z-index:1;}.bali{transform:rotate(5deg) translateY(-4px);margin-left:-10px;z-index:10;}}
+.giants{transform:rotate(-5deg) translateY(8px);margin-right:-10px;z-index:1;}.bali{transform:rotate(5deg) translateY(-4px);margin-left:-10px;z-index:10;}}
+@media (max-width:720px){.collage{gap:12px}.photo{width:clamp(210px,26vw,300px);background:#fdf9e8;background-image:radial-gradient(rgba(0,0,0,0.015) 1px, rgba(0,0,0,0) 1px);background-size:4px 4px;box-shadow:0 12px 28px rgba(0,0,0,.20);overflow:hidden;position:relative;z-index:2;isolation:isolate;transition:transform .2s ease}}
+@media (max-width:520px){.photo{width:clamp(210px,26vw,300px);background:#fdf9e8;background-image:radial-gradient(rgba(0,0,0,0.015) 1px, rgba(0,0,0,0) 1px);background-size:4px 4px;box-shadow:0 12px 28px rgba(0,0,0,.20);overflow:hidden;position:relative;z-index:2;isolation:isolate;transition:transform .2s ease}}
 
 .giants img{ transform: translateY(-48px); }
 .bali img{ transform: translateY(-48px); }
@@ -67,7 +67,7 @@
 
 .giants .label{transform:translateX(-50%) rotate(-1.5deg);}
 .bali .label{transform:translateX(-50%) rotate(1.5deg);}
-.photo:after{content:'';position:absolute;bottom:0;left:0;width:100%;height:24px;background:linear-gradient(to top,rgba(255,255,255,1),rgba(255,255,255,0.3));z-index:1;pointer-events:none;}
+.photo:after{content:'';position:absolute;bottom:0;left:0;width:100%;height:28px;background:linear-gradient(to top,rgba(252,245,221,0.9),rgba(252,245,221,0.25),rgba(252,245,221,0));z-index:1;pointer-events:none;}
 </style>
 </head>
 <body>
